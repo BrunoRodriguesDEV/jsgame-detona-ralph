@@ -32,8 +32,10 @@
       </div>
       <div class="menu-lives">
         <img src="./src/images/player.png" alt="foto do jogador" height="60px" />
-        <h2>x3</h2>
+        <h2 id="lifes">x10</h2>
+
       </div>
+      
     </div>
 
     <div class="panel">
@@ -56,8 +58,36 @@
       </div>
     </div>
   </div>
+ 
 
+
+<div id="myModal2">
+  <h3>Escolha a dificuldade</h3>
+  <div class="botao-dificuldade">
+    <button onclick="ModoFacil()" > Fácil</button>
+    <button onclick="ModoDificil()">Difícil</button>
+
+    <button onclick="ModoProfissional()">Profissional</button>
+    
+    
+  </div>
+  <p id="mensagemPopUp"></p>
+  
+</div>
+
+
+<div onclick="resetar()" class="reset">
+  <button>Resetar</button>
+</div>
   <script defer src="./src/scripts/engine.js"></script>
 </body>
 
 </html>
+
+
+
+<!-- O modal
+<div id="myModa2">
+  <span class="close" onclick="fecharPopUp()">&times;</span>
+  <p id="mensagemPopUp"></p>
+</div> -->

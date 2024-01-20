@@ -1,48 +1,146 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-image: url("../images/wall.png");
-}
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../images/wall.png");
+  }
 
 .menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 5px solid #ffd700;
+  }
+  
+  .panel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #a6e4cf;
+    background-image: url('../images/janela.png');
+    background-size: cover;
+  }
+  
+  .enemy {
+    background-image: url("../images/ralph.png");
+    background-size: cover;
+  }
+  
+  .menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-time h2:nth-child(2),
+  .menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+  }
 
-  height: 90px;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  border-bottom: 5px solid #ffd700;
+   /* Estilos para o modal */
+   #myModal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    background-color: #ff0101;
+    border: 1px solid #a09e9e;
+    box-shadow: 0 4px 8px rgba(197, 92, 92, 0.1);
+    z-index: 1;
 }
 
-.panel {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Estilos para o botão de fechar */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.square {
-  height: 150px;
-  width: 150px;
-  border: 1px solid #000000;
-  background-color: #1aeaa5;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.enemy {
-  background-image: url("../images/ralph.png");
-  background-size: cover;
+
+
+#myModal2 {
+    align-items: center;
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    background-color: #ff0101;
+    border: 1px solid #a09e9e;
+    box-shadow: 0 4px 8px rgba(197, 92, 92, 0.1);
+    z-index: 3;
 }
 
-.menu-lives {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.botao-dificuldade{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.botao-dificuldade button{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.menu-time h2:nth-child(2),
-.menu-score h2:nth-child(2) {
-  margin-top: 1rem;
+#mensagemPopUp{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.reset{
+    position: fixed;
+    top: 70%;
+    left: 45%;
+    
+}
+.reset button{
+    width: 200px;
+    height: 50px;
+    background-color: #cfcf2e;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #ececec;
+    color: #ff0000;
 }
